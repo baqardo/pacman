@@ -1,0 +1,184 @@
+.menu {
+    width: 70vw;
+    height: auto;
+    padding: 10rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgba(#fff, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__background {
+        filter: blur(10px) brightness(80%);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        transform: scale(1.05);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    &__item {
+        margin: 2rem;
+        position: relative;
+        display: block;
+        &__btn {
+            &,
+            &:link,
+            &:visited {
+                z-index: 1;
+                margin-top: 8px;
+                margin-left: 30px;
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 1.5rem 4rem;
+                padding-left: 7rem;
+                display: inline-block;
+                border-radius: 1rem;
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                transition: all 0.2s;
+                position: relative;
+                border: none;
+                cursor: pointer;
+            }
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+                &::after {
+                    transform: scaleX(1.4) scaleY(1.6);
+                    opacity: 0;
+                }
+            }
+
+            &:active,
+            &:focus {
+                outline: none;
+                transform: translateY(-1px);
+                box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
+            }
+        }
+
+        &__hexagon {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 2rem;
+            z-index: 2;
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all 1s ease;
+
+            &__box {
+                width: 90%;
+                height: 52%;
+                transform: rotateZ(60deg);
+                background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+                transition: transform 1s ease;
+
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__icon {
+                    transform: rotateZ(120deg);
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    margin-left: 1px;
+                    width: 25px;
+                    height: 25px;
+                    z-index: 1;
+                    opacity: 0;
+                    fill: #fff;
+
+                    transition: opacity cubic-bezier(1, 0.17, 0.63, 0.47) 0.9s;
+                }
+
+                &::before,
+                &::after {
+                    content: "";
+
+                    position: absolute;
+
+                    background: inherit;
+
+                    width: 100%;
+                    height: 100%;
+
+                    border-radius: 0;
+
+                    transition: all 0.5s ease;
+
+                    display: flex;
+                    align-content: center;
+                    justify-content: center;
+                }
+
+                &::before {
+                    transform: rotateZ(60deg);
+                }
+
+                &::after {
+                    transform: rotateZ(-60deg);
+                }
+
+                // &:hover {
+                //     border-radius: 50px;
+                //     &::before,
+                //     &::after {
+                //         border-radius: 50px;
+                //     }
+                // }
+            }
+        }
+        &:hover &__hexagon {
+            transform: rotateZ(180deg);
+        }
+        &:hover &__hexagon__box {
+            border-radius: 50px;
+            &::before,
+            &::after {
+                border-radius: 50px;
+            }
+        }
+        &:hover &__hexagon__box__icon {
+            opacity: 1;
+        }
+        &:hover &__btn {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+    }
+}
+.maps {
+    display: block;
+    height: 0px;
+    width: 90%;
+    margin: 0;
+    transition: height 0.5s;
+    &__test {
+        height: 100%;
+        width: 100%;
+        background-color: red;
+    }
+}

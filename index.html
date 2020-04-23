@@ -1,16 +1,17 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="menu.css">
+    <!-- <link rel="stylesheet" href="menu.css"> -->
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
-<body id="body">
+<body>
 
-    <div class="logo"><img src="Images/logo.png"></div>
-    <div id="slider">
+
+    <!-- <div id="slider">
         <a href="#" class="control_next">></a>
         <a href="#" class="control_prev">
             < </a>
@@ -52,8 +53,63 @@
                         <img src="Images/slider/lemon.png">
                     </li>
                 </ul>
+    </div> 
+    <a href="#" class="play">PLAY</a> -->
+
+    <img src="./Images/background.jpg" alt="Background" class="menu__background">
+
+    <div class="logo">
+        <img src="./Images/logo.png" alt="PacMan Logo">
     </div>
-    <a href="#" class="play">PLAY</a>
+
+    <div class="menu">
+        <div class="menu__item">
+            <div class="menu__item__hexagon">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon menu__item__hexagon__box__icon--play">
+                        <use xlink:href="./Images/sprite.svg#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="menu__item__btn play-button-js">
+                Graj
+            </button>
+
+        </div>
+
+        <div class="menu__item maps maps-js" is_active="no">
+            <div class="maps__test"></div>
+        </div>
+
+        <div class="menu__item">
+            <div class="menu__item__hexagon play-button-js">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon menu__item__hexagon__box__icon--info">
+                        <use xlink:href="./Images/sprite.svg#icon-pacman"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="menu__item__btn">
+                jak grac ?
+            </button>
+        </div>
+
+        <div class="menu__item">
+            <div class="menu__item__hexagon">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon menu__item__hexagon__box__icon--">
+                        <use xlink:href="./Images/sprite.svg#icon-info"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="menu__item__btn">
+                O projekcie
+            </button>
+        </div>
+
+    </div>
+
+
     <script src="menu.js"></script>
 
 
