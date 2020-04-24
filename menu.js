@@ -1,6 +1,9 @@
 $(".play-button-js").click(function () {
     $(".menu__item").slideUp("slow", function () {
-        $(".test").slideDown("slow", function () {
+        $(".maps").slideDown("slow", function () {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#maps").offset().top
+            }, 500);
 
         })
     });
