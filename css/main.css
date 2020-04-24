@@ -1,0 +1,426 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  color: initial;
+  text-decoration: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 100em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Manrope", sans-serif;
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+}
+
+.level {
+  width: 100%;
+  height: 60rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left__logo {
+  min-width: 60%;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.left__image {
+  width: 100%;
+}
+
+.left__level {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 3rem;
+  position: relative;
+  z-index: 2;
+}
+
+.left__level:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -1rem;
+  bottom: 1rem;
+  width: 90%;
+  height: 3rem;
+  background-color: #206be5;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.left__level--classic:before {
+  background-color: #206be5;
+}
+
+.left__level--red:before {
+  background-color: #ef1a1a;
+}
+
+.left__level--yellow:before {
+  background-color: #f6ff9b;
+}
+
+.left__level--purple:before {
+  background-color: #8e4cc4;
+}
+
+.left__level--extreme:before {
+  background-color: #5dc149;
+}
+
+.left__level--lemon:before {
+  background-color: #5dd199;
+}
+
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.right__scoreboard {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right__score {
+  text-decoration: underline;
+  color: #e6c941;
+}
+
+.right__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.right__lives {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #e6c941;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.right__pacman {
+  fill: currentColor;
+  width: 8rem;
+  height: 8rem;
+}
+
+.column {
+  width: 25vw;
+}
+
+#gameHolder {
+  width: 36vw;
+  height: 39vw;
+  border: 2rem solid white;
+  background-color: black;
+}
+
+#gameHolder canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.button--margin-1 {
+  margin: 0.5rem 0 0.5rem -14rem;
+}
+
+.button--margin-2 {
+  margin: 1rem 2rem;
+}
+
+.button--popup {
+  margin: none !important;
+}
+
+.button__bar {
+  height: 6rem;
+  width: 14rem;
+  background-color: red;
+  position: absolute;
+  z-index: 10;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+  transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+  left: 6.8rem;
+  font-size: 2.9rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__bar--red {
+  background-color: #d66868;
+}
+
+.button__bar--blue {
+  background-color: #5fd3eb;
+}
+
+.button__hexagon {
+  z-index: 20;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+  transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+}
+
+.button__hexagon--blue {
+  background-color: #5fd3eb;
+}
+
+.button__hexagon--red {
+  background-color: #d66868;
+}
+
+.button__hexagon--out {
+  width: 8rem;
+  height: 9.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__hexagon--in {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__icon {
+  width: 70%;
+  -webkit-transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+  transition: all 0.2s cubic-bezier(0.15, 0.94, 1, -0.37);
+}
+
+.button__icon--blue {
+  fill: #5fd3eb;
+}
+
+.button__icon--red {
+  fill: #d66868;
+}
+
+.button:hover .button__hexagon--out {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.button:hover .button__bar {
+  letter-spacing: 2px;
+}
+
+.button:hover .button__icon {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.popup {
+  width: 50rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  text-shadow: 2px 2px 4px #000000;
+  border: 3px solid white;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.popup--gameover {
+  background: linear-gradient(135deg, #af1111 0%, rgba(241, 132, 132, 0.5) 100%), url("../Images/gameover.gif");
+}
+
+.popup--win {
+  background: linear-gradient(135deg, #0098bf 0%, rgba(155, 241, 255, 0.5) 100%), url("../Images/win.gif");
+}
+
+.popup__header {
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.popup__score {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.popup__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.none {
+  display: none;
+}
+
+#p5_loading {
+  color: white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

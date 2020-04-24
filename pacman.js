@@ -87,9 +87,10 @@ var wall = []; // przechowuje sciany
 //---zmienne globalne------------------------
 //-------------------------------------------------------------
 
-var gameOverBox = document.querySelector(".gameOver");
-var winBox = document.querySelector(".win");
+var gameOverBox = document.querySelector(".popup--gameover");
+var winBox = document.querySelector(".popup--win");
 var livesContener = document.querySelector(".lives");
+livesContener.innerHTML = livesCounter;
 
 //--------------------------------------------------------
 //klasy ---------------------------------
@@ -411,9 +412,10 @@ function Ghost(start_x, start_y, xs, type) {
                 ghosts[2].ownFactorSpeed = 0;
                 ghosts[3].ownFactorSpeed = 0;
                 noLoop();
-                livesContener.removeChild(livesContener.lastElementChild);
+                livesContener.innerHTML = livesCounter;
                 if (livesCounter <= 0) {
                     gameOverBox.classList.remove('none');
+                    document.querySelector(".endscoreLost").innerText = Score;
                     return;
                 }
 
@@ -950,39 +952,38 @@ function setup() // funkcja startowa wywolywana tylko raz na poczatku, tworzy pl
 function draw() // funkcja dzialalajaca w nieskonczonosc, maluje tlo 
 {
 
-    {
-        var ghostsBox = document.querySelector(".ghosts");
-        if (ghosts[0].ghostDeath == 1) {
-            ghostsBox.innerHTML = '<img src="../../Images/ghosts/ghost_die/1-die.png" width="50px">';
-        }
-        else {
-            ghostsBox.innerHTML = '<img src="../../Images/ghosts/_0' + ghosts[0].eyeRoll() + '.png" width="50px">';
-        }
-        if (ghosts[1].ghostDeath == 1) {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/2-die.png" width="50px">';
-        }
-        else {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/_1' + ghosts[1].eyeRoll() + '.png" width="50px">';
-        }
-        if (ghosts[2].ghostDeath == 1) {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/3-die.png" width="50px">';
-        }
-        else {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/_2' + ghosts[2].eyeRoll() + '.png" width="50px">';
-        }
-        if (ghosts[3].ghostDeath == 1) {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/4-die.png" width="50px">';
-        }
-        else {
-            ghostsBox.innerHTML += '<img src="../../Images/ghosts/_3' + ghosts[3].eyeRoll() + '.png" width="50px">';
-        }
+    // {
+    //     var ghostsBox = document.querySelector(".ghosts");
+    //     if (ghosts[0].ghostDeath == 1) {
+    //         ghostsBox.innerHTML = '<img src="../../Images/ghosts/ghost_die/1-die.png" width="50px">';
+    //     }
+    //     else {
+    //         ghostsBox.innerHTML = '<img src="../../Images/ghosts/_0' + ghosts[0].eyeRoll() + '.png" width="50px">';
+    //     }
+    //     if (ghosts[1].ghostDeath == 1) {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/2-die.png" width="50px">';
+    //     }
+    //     else {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/_1' + ghosts[1].eyeRoll() + '.png" width="50px">';
+    //     }
+    //     if (ghosts[2].ghostDeath == 1) {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/3-die.png" width="50px">';
+    //     }
+    //     else {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/_2' + ghosts[2].eyeRoll() + '.png" width="50px">';
+    //     }
+    //     if (ghosts[3].ghostDeath == 1) {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/ghost_die/4-die.png" width="50px">';
+    //     }
+    //     else {
+    //         ghostsBox.innerHTML += '<img src="../../Images/ghosts/_3' + ghosts[3].eyeRoll() + '.png" width="50px">';
+    //     }
 
-    }
+    // }
 
 
-    document.querySelector(".punkty").innerHTML = "Score: " + Score;
-    document.querySelector(".punkty2").innerHTML = "Score: " + Score;
-    document.querySelector(".wynik").innerHTML = "Score: " + Score;
+    document.querySelector(".right__score").innerHTML = Score;
+    document.querySelector(".endscoreWin").innerHTML = Score;
 
     if (endCondicion >= food.length) {
         winBox.classList.remove('none');
@@ -1147,10 +1148,6 @@ function checkSpecialPoints() {
     }
     return 0;
 }
-
-
-
-
 
 function checkSpecialPoints_for_ghosts(duch) {
 
