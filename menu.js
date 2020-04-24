@@ -11,7 +11,7 @@ play_buttons.forEach(function (button) {
     button.addEventListener("click", function () {
         let maps = document.querySelector(".maps-js");
         if (maps.getAttribute("is_active") === "no") {
-            maps.style.height = "100px";
+            maps.style.height = "300px";
             maps.setAttribute("is_active", "yes");
         }
         else {

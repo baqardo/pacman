@@ -171,14 +171,24 @@
     }
 }
 .maps {
-    display: block;
     height: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.5s;
+
+    gap: 2rem;
+
+    background-color: red;
     width: 90%;
     margin: 0;
-    transition: height 0.5s;
-    &__test {
-        height: 100%;
-        width: 100%;
-        background-color: red;
+
+    overflow: hidden;
+    &__items {
+        margin: 2rem;
+        &__photo {
+            width: 10rem;
+        }
     }
 }
