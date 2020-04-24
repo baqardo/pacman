@@ -27,6 +27,7 @@
         margin: 2rem;
         position: relative;
         display: block;
+        transition: opacity 1s;
         &__btn {
             &,
             &:link,
@@ -170,25 +171,12 @@
         }
     }
 }
-.maps {
-    height: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    transition: all 0.5s;
 
-    gap: 2rem;
-
+.test {
+    display: none;
     background-color: red;
-    width: 90%;
-    margin: 0;
-
-    overflow: hidden;
-    &__items {
-        margin: 2rem;
-        &__photo {
-            width: 10rem;
-        }
+    &__2 {
+        height: 10rem;
+        width: 10rem;
     }
 }
