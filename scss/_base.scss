@@ -8,6 +8,13 @@
 
 //shadows
 
+//RESPONSIVE BREAKPOSNTS
+
+$bp-largest: 62.5em; //1000px
+$bp-large: 50em; //800px
+$bp-medium: 34.375em; //550px
+$bp-small: 25em; //400px
+
 *,
 *::before,
 *::after {
@@ -30,9 +37,10 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    overflow-y: auto;
 
     display: flex;
     justify-content: flex-start;

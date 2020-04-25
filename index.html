@@ -25,10 +25,11 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="menu.css"> -->
+
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -46,6 +47,7 @@
 
 
     <div class="menu">
+
         <div class="menu__item play-item-js">
             <div class="menu__item__hexagon">
                 <div class="menu__item__hexagon__box">
@@ -62,7 +64,7 @@
 
 
 
-        <div class="menu__item">
+        <div class="menu__item how-to-item-js">
             <div class="menu__item__hexagon play-button-js">
                 <div class="menu__item__hexagon__box">
                     <svg class="menu__item__hexagon__box__icon ">
@@ -75,7 +77,7 @@
             </button>
         </div>
 
-        <div class="menu__item">
+        <div class="menu__item info-js">
             <div class="menu__item__hexagon">
                 <div class="menu__item__hexagon__box">
                     <svg class="menu__item__hexagon__box__icon ">
@@ -87,7 +89,15 @@
                 O projekcie
             </button>
         </div>
-        <div class="maps">
+
+
+
+        <div class="maps ">
+            <button class="return return-js">
+                <svg class="return__icon ">
+                    <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                </svg>
+            </button>
             <h1 class="maps__header" id="maps">Wybierz Mapę</h1>
             <div class="maps__container">
                 <div class="maps__container__item">
@@ -134,7 +144,40 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="how-to-play">
+            <div class="how-to-play__inner">
+                <button class="return return__how-to-play return-js">
+                    <svg class="return__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                    </svg>
+                </button>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla alias eaque numquam animi quis libero
+                    quaerat laudantium culpa, velit, dolore eos excepturi repellendus voluptates harum aliquid sapiente,
+                    atque
+                    voluptatum id.</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info__inner">
+                <button class="return return__info return-js">
+                    <svg class="return__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                    </svg>
+                </button>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla alias eaque numquam animi quis libero
+                    quaerat laudantium culpa, velit, dolore eos excepturi repellendus voluptates harum aliquid sapiente,
+                    atque
+                    voluptatum id.</p>
+            </div>
+        </div>
+
+
     </div>
+
+
 
 
 
