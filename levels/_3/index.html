@@ -20,6 +20,32 @@
     <div class="background">
         <img src="../../Images/background.jpg" alt="Background">
     </div>
+    <nav class="navigation">
+        <input type="checkbox" id="nav-toggle" class="navigation__checkbox">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__content">
+            <a class="button button--margin-2" href="../../index.html">
+                <div class="button__hexagon button__hexagon--blue button__hexagon--out">
+                    <div class="button__hexagon button__hexagon--in">
+                        <svg class="button__icon button__icon--blue">
+                            <use xlink:href="../../Images/sprite.svg#icon-home"></use>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a class="button button--margin-2" href="index.html">
+                <div class="button__hexagon button__hexagon--red button__hexagon--out">
+                    <div class="button__hexagon button__hexagon--in">
+                        <svg class="button__icon button__icon--red">
+                            <use xlink:href="../../Images/sprite.svg#icon-reset"></use>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </nav>
     <div class="level">
         <div class="left column">
             <div class="left__logo">
@@ -45,7 +71,7 @@
                     </div>
                     <div class="button__bar button__bar--blue">Home</div>
                 </a>
-                <a class="button button--margin-1" href="_3.html">
+                <a class="button button--margin-1" href="index.html">
                     <div class="button__hexagon button__hexagon--red button__hexagon--out">
                         <div class="button__hexagon button__hexagon--in">
                             <svg class="button__icon button__icon--red">
@@ -63,6 +89,28 @@
                 x <span class="right__countdown lives">3</span>
             </div>
         </div>
+        <div class="arrows">
+            <div class="arrows__button arrows__button--up">
+                <svg class="arrows__icon">
+                    <use xlink:href="../../Images/sprite.svg#icon-arrow-up"></use>
+                </svg>
+            </div>
+            <div class="arrows__button arrows__button--left">
+                <svg class="arrows__icon">
+                    <use xlink:href="../../Images/sprite.svg#icon-arrow-left"></use>
+                </svg>
+            </div>
+            <div class="arrows__button arrows__button--down">
+                <svg class="arrows__icon">
+                    <use xlink:href="../../Images/sprite.svg#icon-arrow-down"></use>
+                </svg>
+            </div>
+            <div class="arrows__button arrows__button--right">
+                <svg class="arrows__icon">
+                    <use xlink:href="../../Images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </div>
+        </div>
     </div>
 
     <div class="popup popup--gameover none">
@@ -78,7 +126,7 @@
                     </div>
                 </div>
             </a>
-            <a class="button button--margin-2" href="_3.html">
+            <a class="button button--margin-2" href="index.html">
                 <div class="button__hexagon button__hexagon--red button__hexagon--out">
                     <div class="button__hexagon button__hexagon--in">
                         <svg class="button__icon button__icon--red">
@@ -103,7 +151,7 @@
                     </div>
                 </div>
             </a>
-            <a class="button button--margin-2" href="_3.html">
+            <a class="button button--margin-2" href="index.html">
                 <div class="button__hexagon button__hexagon--red button__hexagon--out">
                     <div class="button__hexagon button__hexagon--in">
                         <svg class="button__icon button__icon--red">

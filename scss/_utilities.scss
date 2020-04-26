@@ -1,6 +1,11 @@
 .hide {
-    opacity: 0 !important;
+	opacity: 0 !important;
 }
 .no-display {
-    display: none;
+	display: none;
+}
+
+.fixed-top {
+	margin-top: 0;
+	margin-bottom: auto;
 }
