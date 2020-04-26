@@ -1,0 +1,46 @@
+///VARIABLES
+
+//colors
+$yellow: #e6c941;
+$blue: #5fd3eb;
+$red: #d66868;
+//gradient
+
+//font
+
+//breakpoints
+$breakpoint-large: 100em;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    &:link,
+    &:visited {
+        color: initial;
+        text-decoration: none;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $breakpoint-large) {
+        font-size: 50%;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+
+    background-image: url("../Images/background.jpg");
+    background-size: cover;
+}

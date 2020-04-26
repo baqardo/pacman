@@ -1,27 +1,4 @@
-<html>
-<!-- <div class="menu__items maps maps-js" is_active="no">
-
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-            <div class="maps__items">
-                <img class="maps__items__photo" src="./Images/slider/classic.png" alt="Classic Map">
-            </div>
-
-
-        </div> -->
+<html class="menu-html">
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
@@ -34,20 +11,18 @@
     <link rel="shortcut icon" href="favicon.ico" />
 </head>
 
-<body>
+<body class="menu-body">
 
 
 
-    <img src="./Images/background.jpg" alt="Background" class="menu__background">
-
-    <div class="logo">
-        <img src="./Images/logo.png" alt="PacMan Logo">
+    <div class="background">
+        <img src="./Images/background.jpg" alt="Background">
     </div>
 
-
-
     <div class="menu">
-
+        <div class="menu__logo">
+            <img src="./Images/logo-4.png" alt="PacMan Logo">
+        </div>
         <div class="menu__item play-item-js">
             <div class="menu__item__hexagon">
                 <div class="menu__item__hexagon__box">
@@ -104,42 +79,42 @@
                     <img class="maps__container__img" src="./Images/slider/classic.png" alt="classic">
                     <div class="maps__container__black-mask">
                         <h2 class="maps__container__name">classic</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <a href="./levels/_1/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
                 <div class="maps__container__item">
-                    <img class="maps__container__img" src="./Images/slider/extreme.png" alt="extreme">
+                    <img class="maps__container__img" src="./Images/slider/red.png" alt="extreme">
                     <div class="maps__container__black-mask">
-                        <h2 class="maps__container__name">extreme</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <h2 class="maps__container__name">red</h2>
+                        <a href="./levels/_2/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
                 <div class="maps__container__item">
-                    <img class="maps__container__img" src="./Images/slider/lemon.png" alt="lemon">
+                    <img class="maps__container__img" src="./Images/slider/yellow.png" alt="lemon">
                     <div class="maps__container__black-mask">
-                        <h2 class="maps__container__name">lemon</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <h2 class="maps__container__name">yellow</h2>
+                        <a href="./levels/_3/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
                 <div class="maps__container__item">
                     <img class="maps__container__img" src="./Images/slider/purple.png" alt="purple">
                     <div class="maps__container__black-mask">
                         <h2 class="maps__container__name">purple</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <a href="./levels/_4/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
                 <div class="maps__container__item">
-                    <img class="maps__container__img" src="./Images/slider/red.png" alt="red">
+                    <img class="maps__container__img" src="./Images/slider/extreme.png" alt="red">
                     <div class="maps__container__black-mask">
-                        <h2 class="maps__container__name">red</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <h2 class="maps__container__name">extreme</h2>
+                        <a href="./levels/_5/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
                 <div class="maps__container__item">
-                    <img class="maps__container__img" src="./Images/slider/yellow.png" alt="yellow">
+                    <img class="maps__container__img" src="./Images/slider/lemon.png" alt="yellow">
                     <div class="maps__container__black-mask">
-                        <h2 class="maps__container__name">yellow</h2>
-                        <button class="btn maps__container__btn">Graj</button>
+                        <h2 class="maps__container__name">lemon</h2>
+                        <a href="./levels/_6/index.html" class="btn maps__container__btn">Graj</a>
                     </div>
                 </div>
             </div>
@@ -167,10 +142,38 @@
                         <use xlink:href="./Images/sprite.svg#icon-home"></use>
                     </svg>
                 </button>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla alias eaque numquam animi quis libero
-                    quaerat laudantium culpa, velit, dolore eos excepturi repellendus voluptates harum aliquid sapiente,
-                    atque
-                    voluptatum id.</p>
+                <div>
+                    <h2 class="maps__header">O Projekcie</h2>
+                    <p>PacMan to projekt zainspirowany dobrze znaną grą o tej samej nazwie.
+                        Pracowaliśmy nad nim jako
+                        uczniownie 2 klasy
+                        Technikum Informatycznego ZSTiO w Limanowej. Jego stworzenie dało nam ocenę celującą z
+                        przedmiotu
+                        Programowanie
+                        Aplikacji Internetowych. Jednak szybko doszliśmy do wniosku, że to nie ocena była tutaj
+                        najważniejsza - a pasja. Dzięki PacManowi
+                        rozwinęliśmy swoje umiejętności. Był to pierwszy taki projekt, który udało się nam wspólnie
+                        zrealizować.
+                        Skonfrontował nas z prawdziwym obliczem programowania.
+                        Godziny spędzone
+                        przed kodem i na komunikatorze głosowym dały nam możliwośc sprawdzenia się w pracy zespołowej.
+                        Projekt ten pokazał nam, że działając razem można stworzyć coś, co na pierwszy rzut oka wydawało
+                        się
+                        bardzo trudne do zrobienia.
+                    </p>
+                    <p>
+                        <h2 class="maps__header maps__header--technology">Technologie użyte w projekcie:</h2>
+                        <ul class="info__list">
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>p5.js</li>
+                            <li>Excel - makra vba</li>
+                        </ul>
+                    </p>
+                </div>
+
             </div>
         </div>
 

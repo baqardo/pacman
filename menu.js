@@ -4,9 +4,9 @@ $(".play-button-js").click(function () {
     $(".menu__item").slideUp(animation_speed, function () {
         $(".maps").slideDown(animation_speed, function () {
 
-            $(this).css({
-                display: "flex"
-            })
+            // $(this).css({
+            //     display: "flex"
+            // })
 
 
         })
