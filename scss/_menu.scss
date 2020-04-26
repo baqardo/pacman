@@ -19,8 +19,10 @@
     }
 
     &__background {
-        filter: blur(15px) brightness(80%);
-        width: 100vw;
+        $blur: 15px;
+        filter: blur($blur) brightness(80%);
+        width: 110vw;
+        transform: translateX(-($blur + 5));
         height: 130vh;
         background-size: cover;
         position: absolute;
