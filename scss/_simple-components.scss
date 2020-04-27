@@ -57,7 +57,17 @@
         transform: scale(1.1);
         filter: blur($blur) brightness(80%);
     }
+
+    @media only screen and (max-width: $bp-super-large) {
+        height: 170vh;
+    }
+    @media only screen and (max-width: $bp-largest) {
+        height: 190vh;
+    }
+    @media only screen and (max-width: $bp-large) {
+        height: 130vh;
+    }
     @media only screen and (max-width: $bp-medium) {
-        height: 200vh;
+        height: 180vh;
     }
 }

@@ -232,8 +232,8 @@
 	}
 
 	@media only screen and (max-width: $bp-largest) {
-		width: 50.6024vh; //90
-		height: 54.8193vh; //97.5
+		width: 90vw; //50.6024
+		height: 97.5vw; //54.8193
 	}
 }
 
@@ -418,10 +418,15 @@
 .arrows {
 	width: 60%;
 	margin: 0 auto;
-	grid-template-columns: repeat(3, 25rem);
-	grid-template-rows: repeat(2, 25rem);
+	grid-template-columns: repeat(3, 23rem);
+	grid-template-rows: repeat(2, 23rem);
 	justify-content: center;
 	display: none;
+	opacity: 0.95;
+	margin: auto 0;
+
+	// position: absolute;
+	// bottom: 1rem;
 
 	@media only screen and (max-width: $bp-largest) {
 		display: grid;
