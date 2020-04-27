@@ -2,9 +2,7 @@ let animation_speed = 'medium';
 
 $('.play-button-js').click(function() {
 	$('.menu__item').slideUp(animation_speed, function() {
-		$('.maps').slideDown(animation_speed, function() {
-			document.querySelector('.menu').classList.add('fixed-top');
-		});
+		$('.maps').slideDown(animation_speed, function() {});
 	});
 });
 
@@ -24,7 +22,6 @@ $('.info-js').click(function() {
 			$(this).css({
 				display: 'flex'
 			});
-			document.querySelector('.menu').classList.add('fixed-top');
 		});
 	});
 });
@@ -35,7 +32,6 @@ $('.return-js').click(function() {
 			$(this).css({
 				display: 'flex'
 			});
-			document.querySelector('.menu').classList.remove('fixed-top');
 		});
 	});
 });

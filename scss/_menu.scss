@@ -18,6 +18,8 @@
 
 	@media only screen and (max-width: $bp-large) {
 		width: 100vw;
+		margin-top: 0;
+		margin-bottom: auto;
 	}
 
 	&__logo {
