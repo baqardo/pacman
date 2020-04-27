@@ -36,6 +36,7 @@
 	@media only screen and (max-width: $bp-largest) {
 		flex: 0;
 		padding: 5rem;
+		height: 10.3305vh;
 	}
 
 	&__logo {
@@ -147,7 +148,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		flex: 0;
-		height: 0;
+		height: 11.0154vh;
 		padding: 8rem;
 	}
 
@@ -231,8 +232,8 @@
 	}
 
 	@media only screen and (max-width: $bp-largest) {
-		width: 90vw;
-		height: 97.5vw;
+		width: 50.6024vh; //90
+		height: 54.8193vh; //97.5
 	}
 }
 
@@ -416,9 +417,9 @@
 
 .arrows {
 	width: 60%;
-	margin: auto;
-	grid-template-columns: repeat(3, 18rem);
-	grid-template-rows: repeat(2, 18rem);
+	margin: 0 auto;
+	grid-template-columns: repeat(3, 25rem);
+	grid-template-rows: repeat(2, 25rem);
 	justify-content: center;
 	display: none;
 
