@@ -417,8 +417,8 @@
 .arrows {
 	width: 60%;
 	margin: auto;
-	grid-template-columns: repeat(3, 15rem);
-	grid-template-rows: repeat(2, 15rem);
+	grid-template-columns: repeat(3, 18rem);
+	grid-template-rows: repeat(2, 18rem);
 	justify-content: center;
 	display: none;
 
@@ -435,6 +435,7 @@
 		justify-content: center;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 		cursor: pointer;
+		touch-action: none;
 
 		&:hover,
 		&:active,

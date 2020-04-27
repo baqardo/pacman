@@ -1037,10 +1037,10 @@ a:link, a:visited {
 .arrows {
   width: 60%;
   margin: auto;
-  -ms-grid-columns: (15rem)[3];
-      grid-template-columns: repeat(3, 15rem);
-  -ms-grid-rows: (15rem)[2];
-      grid-template-rows: repeat(2, 15rem);
+  -ms-grid-columns: (18rem)[3];
+      grid-template-columns: repeat(3, 18rem);
+  -ms-grid-rows: (18rem)[2];
+      grid-template-rows: repeat(2, 18rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1070,6 +1070,8 @@ a:link, a:visited {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   cursor: pointer;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .arrows__button:hover, .arrows__button:active, .arrows__button:focus {
