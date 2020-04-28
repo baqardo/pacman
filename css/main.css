@@ -463,6 +463,8 @@ a:link, a:visited {
 
 .how-to-play__inner p {
   text-align: left;
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
 }
 
 .info {
