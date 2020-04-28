@@ -96,6 +96,48 @@ var arrows = [
 ];
 livesContener.innerHTML = livesCounter;
 
+//responsive
+// var board = document.querySelector('#gameHolder');
+// var screen_height = document.querySelector('html').clientHeight;
+// var screen_width = document.querySelector('html').clientWidth;
+
+// var board_width = 0;
+// var board_height = 0;
+
+// if (screen_height * 0.5 > screen_width) {
+// 	board_height = screen_width * 0.95;
+// 	board_width = board_height;
+// } else {
+// 	board_height = screen_height * 0.5;
+// 	board_width = board_height;
+// }
+
+// board.style.width = board_width + 'px';
+// board.style.height = board_height + 'px';
+
+function checkResponsive() {
+	if (document.querySelector('html').clientWidth <= 1000) {
+		var board = document.querySelector('#gameHolder');
+		var screen_height = document.querySelector('html').clientHeight;
+		var screen_width = document.querySelector('html').clientWidth;
+
+		var board_width = 0;
+		var board_height = 0;
+
+		if (screen_height * 0.5 > screen_width) {
+			board_height = screen_width * 0.95;
+			board_width = board_height;
+		} else {
+			board_height = screen_height * 0.5;
+			board_width = board_height;
+		}
+
+		board.style.width = board_width + 'px';
+		board.style.height = board_height + 'px';
+	}
+}
+checkResponsive();
+window.onresize = checkResponsive;
 //--------------------------------------------------------
 //klasy ---------------------------------
 
@@ -168,7 +210,8 @@ function BigFood(x, y) {
 	};
 }
 
-function PacMan() { // kalsa pacman
+function PacMan() {
+	// kalsa pacman
 	this.Heart = '<img src="Images/heart.png" width="100" >';
 
 	this.begin = function() {
@@ -880,7 +923,8 @@ function preload() {
 //jak zrobic nowa sciane
 //--------------------------????????????
 
-function setup() { // funkcja startowa wywolywana tylko raz na poczatku, tworzy plansze , oraz obiekt pacman
+function setup() {
+	// funkcja startowa wywolywana tylko raz na poczatku, tworzy plansze , oraz obiekt pacman
 	var cnv = createCanvas(28 * scl, 31 * scl);
 	cnv.parent('gameHolder');
 
@@ -899,7 +943,8 @@ function setup() { // funkcja startowa wywolywana tylko raz na poczatku, tworzy 
 	frameRate(frequency); // liczba klatek na sekunde
 }
 
-function draw() { // funkcja dzialalajaca w nieskonczonosc, maluje tlo
+function draw() {
+	// funkcja dzialalajaca w nieskonczonosc, maluje tlo
 	// {
 	//     var ghostsBox = document.querySelector(".ghosts");
 	//     if (ghosts[0].ghostDeath == 1) {
@@ -1024,7 +1069,8 @@ function draw() { // funkcja dzialalajaca w nieskonczonosc, maluje tlo
 //---------------------------------------------------------------------------
 //funkcje poboczne----------------
 
-function keyPressed() { // obsluga sterwoania strzalkamiq
+function keyPressed() {
+	// obsluga sterwoania strzalkamiq
 	if (keyCode === UP_ARROW) {
 		turn('up');
 	} else if (keyCode === DOWN_ARROW) {
