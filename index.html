@@ -1,0 +1,193 @@
+<html class="menu-html">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body class="menu-body">
+
+    <div class="background">
+        <img src="./Images/background.jpg" alt="Background">
+    </div>
+
+    <div class="menu">
+        <div class="menu__logo">
+            <img src="./Images/logo-4.png" alt="PacMan Logo">
+        </div>
+        <div class="menu__item play-item-js">
+            <div class="menu__item__hexagon">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon">
+                        <use xlink:href="./Images/sprite.svg#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="btn play-button-js">
+                Graj
+            </button>
+
+        </div>
+
+
+
+        <div class="menu__item how-to-item-js">
+            <div class="menu__item__hexagon play-button-js">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-pacman"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="btn">
+                jak grac ?
+            </button>
+        </div>
+
+        <div class="menu__item info-js">
+            <div class="menu__item__hexagon">
+                <div class="menu__item__hexagon__box">
+                    <svg class="menu__item__hexagon__box__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-info"></use>
+                    </svg>
+                </div>
+            </div>
+            <button class="btn">
+                O projekcie
+            </button>
+        </div>
+
+
+
+        <div class="maps ">
+            <button class="return return-js">
+                <svg class="return__icon ">
+                    <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                </svg>
+            </button>
+            <h1 class="maps__header" id="maps">Wybierz Mapę</h1>
+            <div class="maps__container">
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/classic.png" alt="classic">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">classic</h2>
+                        <a href="./levels/_1/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/red.png" alt="extreme">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">red</h2>
+                        <a href="./levels/_2/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/yellow.png" alt="lemon">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">yellow</h2>
+                        <a href="./levels/_3/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/purple.png" alt="purple">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">purple</h2>
+                        <a href="./levels/_4/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/extreme.png" alt="red">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">extreme</h2>
+                        <a href="./levels/_5/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+                <div class="maps__container__item">
+                    <img class="maps__container__img" src="./Images/slider/lemon.png" alt="yellow">
+                    <div class="maps__container__black-mask">
+                        <h2 class="maps__container__name">lemon</h2>
+                        <a href="./levels/_6/index.html" class="btn maps__container__btn">Graj</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="how-to-play">
+            <div class="how-to-play__inner">
+                <button class="return return__how-to-play return-js">
+                    <svg class="return__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                    </svg>
+                </button>
+                <div>
+                <h2 class="maps__header">Jak Grać</h2>
+                <p>
+                    Gracz kieruje żółtą kulką – tytułowym Pac-Manem − poprzez labirynt pełen białych kulek. Warunkiem przejścia do następnego poziomu jest zjedzenie ich wszystkich. Ponadto należy unikać czterech duszków (różowego – Pinky, błękitnego – Inky, czerwonego – Blinky i pomarańczowego – Clyde), które poruszają się w pozornie losowych kierunkach po całej planszy. Trafienie na duszka oznacza utratę jednego życia. Na planszy są także 4 większe kulki, które na krótki czas
+                    odstraszają przeciwników i pozwalają na ich zjedzenie. Zjedzenie ducha oznacza dodatkowe punkty. Zjedzone duszki wracają do domku w centrum planszy, gdzie po pewnym czasie się regenerują. Na ekranie znajduje się specjalny tunel, który łączy dwa brzegi planszy (wchodząc z jednej strony wychodzimy z drugiej). Duchy również mogą korzystać z tunelu. Do sterowania Pac-Manem używa się strzałek.
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info__inner">
+                <button class="return return__info return-js">
+                    <svg class="return__icon ">
+                        <use xlink:href="./Images/sprite.svg#icon-home"></use>
+                    </svg>
+                </button>
+                <div>
+                    <h2 class="maps__header">O Projekcie</h2>
+                    <p>PacMan to projekt zainspirowany dobrze znaną grą o tej samej nazwie.
+                        Pracowaliśmy nad nim jako
+                        uczniownie 2 klasy
+                        Technikum Informatycznego ZSTiO w Limanowej. Jego stworzenie dało nam ocenę celującą z
+                        przedmiotu
+                        Programowanie
+                        Aplikacji Internetowych. Jednak szybko doszliśmy do wniosku, że to nie ocena była tutaj
+                        najważniejsza - a pasja. Dzięki PacManowi
+                        rozwinęliśmy swoje umiejętności. Był to pierwszy taki projekt, który udało się nam wspólnie
+                        zrealizować.
+                        Skonfrontował nas z prawdziwym obliczem programowania.
+                        Godziny spędzone
+                        przed kodem i na komunikatorze głosowym dały nam możliwośc sprawdzenia się w pracy zespołowej.
+                        Projekt ten pokazał nam, że działając razem można stworzyć coś, co na pierwszy rzut oka wydawało
+                        się
+                        bardzo trudne do zrobienia.
+                    </p>
+                    <p>
+                        <h2 class="maps__header maps__header--technology">Technologie użyte w projekcie:</h2>
+                        <ul class="info__list">
+                            <li>HTML</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>p5.js</li>
+                            <li>Excel - makra vba</li>
+                        </ul>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="menu.js"></script>
+
+
+</body>
+
+</html>
