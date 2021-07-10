@@ -1,0 +1,23 @@
+{
+  "name": "pacman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pacman.js",
+  "homepage": "https://baqardo.github.io/pacman",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baqardo/pacman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baqardo/pacman/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
